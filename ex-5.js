@@ -1,3 +1,4 @@
+
 const students = [
   { name: "John", score: 80 },
   { name: "Jane", score: 90 },
@@ -8,6 +9,7 @@ const students = [
 function getAverageStudentScore(students) {
   // Start coding here
   let score = students.reduce((acc,cur)=> acc+cur.score,0);
+  
   return score/students.length
 }
 
@@ -17,4 +19,4 @@ function getAverageStudentScore(students) {
 //     .reduce((acc, cur) => acc + cur, 0); // รวมค่าของตัวเลขที่กรองออกมา
 // }
 
-console.log(getAverageStudentScore(students)); // Output: 87.5
+getAverageStudentScore(students); // Output: 87.5
