@@ -1,7 +1,7 @@
 let words = ["apple", "cat", "dog", "elephant"];
 
 function get5CharWords(words) {
-  // Start coding here
+return words.filter( words => words.includes("e"));
 }
 
 const result = get5CharWords(words);
