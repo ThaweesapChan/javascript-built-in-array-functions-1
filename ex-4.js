@@ -8,9 +8,18 @@ const todos = [
 
 function getCompletedTodo(todos) {
   // Start coding here
+  return todos.filter((todo) => {
+    return todo.completed === true;
+  });
 }
 
-getCompletedTodo(todos);
+// function sumNegativeNumbers(numbers) {
+//   return numbers
+//     .filter((cur) => cur < 0) // เลือกเฉพาะตัวเลขที่น้อยกว่าศูนย์
+//     .reduce((acc, cur) => acc + cur, 0); // รวมค่าของตัวเลขที่กรองออกมา
+// }
+
+console.log(getCompletedTodo(todos))
 
 /* 
 	Output:
